@@ -11,7 +11,21 @@
       <plugin>
         <artifactId>maven-compiler-plugin</artifactId>
         <version>3.8.1</version>
+        <configuration>
+          <source>11</source>
+          <target>11</target>
+        </configuration>
       </plugin>
     </plugins>
   </build>
 </project>
+```
+
+Save with `Ctrl+O`, `Enter`, `Ctrl+X`.
+
+Then push the change to GitHub:
+```
+cd ~/jenkins-lab
+git add .
+git commit -m "Fix Java version in pom.xml"
+git push origin main
