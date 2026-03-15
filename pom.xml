@@ -1,10 +1,8 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0">
   <modelVersion>4.0.0</modelVersion>
-
   <groupId>com.devops</groupId>
   <artifactId>jenkins-lab</artifactId>
   <version>1.0</version>
-
   <build>
     <sourceDirectory>src</sourceDirectory>
     <plugins>
@@ -19,13 +17,3 @@
     </plugins>
   </build>
 </project>
-```
-
-Save with `Ctrl+O`, `Enter`, `Ctrl+X`.
-
-Then push the change to GitHub:
-```
-cd ~/jenkins-lab
-git add .
-git commit -m "Fix Java version in pom.xml"
-git push origin main
